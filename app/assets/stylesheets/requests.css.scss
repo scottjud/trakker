@@ -1,3 +1,24 @@
 // Place all the styles related to the requests controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.request {
+  border-bottom: solid 1px #CCC;
+  padding: 10px 0;
+}
+
+.request p {
+  margin: 4px 0;
+}
+
+
+.request.hover {
+  background: #FAFAFA;
+}
+.request .admin{
+  display: none;
+}
+
+.request.hover .admin{
+  display: inline;
+}
