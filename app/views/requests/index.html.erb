@@ -7,7 +7,7 @@
 <% @requests.each do |request| %>
 
 <div class="request">
-  <strong><%= request.name %></strong>
+  <strong><%= request.user.full_name %></strong>
   <p><%= request.description %></p>
   <p><%= request.urls %></p>
     <div class="meta">
