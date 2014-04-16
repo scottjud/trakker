@@ -8,7 +8,7 @@
 
 <div class="request">
   <strong><%= request.user.full_name %></strong>
-  <p><%= request.description %></p>
+  <p><%= request.subject %></p>
   <p><%= request.urls %></p>
     <div class="meta">
       <%= link_to time_ago_in_words(request.created_at) + " ago", request %>

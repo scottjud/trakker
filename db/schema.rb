@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140415194719) do
+ActiveRecord::Schema.define(version: 20140416155030) do
 
   create_table "requests", force: true do |t|
     t.text     "description"
@@ -19,6 +19,8 @@ ActiveRecord::Schema.define(version: 20140415194719) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "user_id"
+    t.string   "subject"
+    t.string   "requester"
   end
 
   add_index "requests", ["user_id"], name: "index_requests_on_user_id"

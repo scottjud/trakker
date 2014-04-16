@@ -6,6 +6,11 @@
 </p>
 
 <p>
+  <strong>Subject:</strong>
+  <%= @request.subject %>
+</p>
+
+<p>
   <strong>Description:</strong>
   <%= @request.description %>
 </p>
@@ -13,6 +18,11 @@
 <p>
   <strong>Urls:</strong>
   <%= @request.urls %>
+</p>
+
+<p>
+  <strong>Requester:</strong>
+  <%= @request.requester %>
 </p>
 
 <%= link_to 'Edit', edit_request_path(@request) %> |
